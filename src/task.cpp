@@ -1,4 +1,4 @@
-#include "../include/task.h"
+#include "task.h"
 
 int sum_client_time;
 int sum_checkout_wait_time;
@@ -82,7 +82,7 @@ void Shop::Start() {
 
     chrono::time_point<chrono::high_resolution_clock> total_time_end = chrono::high_resolution_clock::now();
     chrono::milliseconds total_duration = chrono::duration_cast<chrono::milliseconds>(total_time_end - total_time_start);
-    std::cout << "Ïðîøëî " << total_duration.count() << " ìñ." << endl;
+    std::cout << "ÃÃ°Ã®Ã¸Ã«Ã® " << total_duration.count() << " Ã¬Ã±." << endl;
 
     std::cout << "requestCount: " << requestCount << endl;
     std::cout << "processedCount: " << processedCount << endl;
