@@ -1,4 +1,4 @@
-#include "../include/task.h"
+#include "task.h"
 
 int main()
 {
